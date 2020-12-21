@@ -34,14 +34,14 @@ function draw() {
    bullet.velocityX = 0;
    var deformation = 0.5 * bulletWeight * bulletSpeed * bulletSpeed/(Thickness of Wall * Thickness of Wall * Thickness of Wall)
    if(deformation > 180){
-     car.shapeColor = color("red");
+     bullet.shapeColor = color("red");
 
    }
    if(deformation < 180 && deformation > 100){
-     car.shapeColor = color("yellow");
+     bullet.shapeColor = color("yellow");
    }
    if(deformation < 100){
-     car.shapeColor = color("green");
+     bullet.shapeColor = color("green");
    }
  }
   drawSprites();
